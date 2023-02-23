@@ -34,3 +34,17 @@ h1 {
     height: 80px;
     width: 100%;
 }
+
+.card-text{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+table{
+    background-color: rgba(76, 72, 72, 0.164);
+}
+
+td{
+    color: rgb(233, 233, 233);
+}
