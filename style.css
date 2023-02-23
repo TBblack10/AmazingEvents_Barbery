@@ -1,0 +1,29 @@
+html, body{
+    width: 100% !important;
+    overflow-x: hidden !important; 
+}
+
+.card {
+    width: 300px;
+    height: 10%;
+}
+
+.logo {
+    height: 70px;
+}
+
+img {
+    height: 180px;
+}
+
+
+h1 {
+    font-size: 3rem !important;
+    font-family: 'Secular One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80px;
+    transition: color 0.7s linear 0.2s;
+}
