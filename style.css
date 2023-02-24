@@ -48,3 +48,8 @@ table{
 td{
     color: rgb(233, 233, 233);
 }
+
+.search{
+    position: absolute;
+    right: 50px;
+}
