@@ -39,7 +39,11 @@ h1 {
 .card-text{
     display: flex;
     justify-content: center;
-    height: 80px;
+    height: 20px;
+}
+
+p{
+    font-size: 14px;
 }
 
 table{
@@ -54,3 +58,22 @@ td{
     position: absolute;
     right: 50px;
 }
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2% auto;
+    align-self: center;
+    justify-content: center;
+}
+
+label, small{
+    color: rgb(160, 160, 160);
+}
+
+input:focus{
+    box-shadow: none !important;
+    border-color: rgb(240, 0, 120) !important; 
+}
+
