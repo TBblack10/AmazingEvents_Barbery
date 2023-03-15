@@ -34,28 +34,28 @@ function crearCheckbox(array){
 
 function pintarEventos(array){
   if(array.length == 0){
-    cards.innerHTML = `<h2 class="display-1 fw-bolder">Event Not Found</h2>`
-    return
+      cards.innerHTML = `<h2 class="display-1 fw-bolder">No hay coincidencias</h2>`
+      return
   }
-    let tarjetas = ''
-    array.forEach(evento => {
-        tarjetas += `
-        <div class="card" style="height: 400px; width: 15rem; color: white; background-color: rgba(76, 72, 72, 0.164);">
-          <img src="${evento.image}" class="card-img-top" style="object-fit: cover; height: 190px" alt="Costume Party">
-          <div class="card-body">
-            <h5 class="card-title text-center">${evento.name}</h5>
-            <p class="card-text">${evento.category}</p>
-            <p class="card-text" style="height: 70px">${evento.description}</p>
-            <div class="d-flex justify-content-end align-items-center">
-              <small class="me-auto">Price $${evento.price}</small>
-              <div class="btn-group">
-                <a href="./details.html" type="button" class="btn btn-sm btn-outline-secondary">Details</a>
-              </div>
+  let tarjetas = ''
+  array.forEach(evento => {
+      tarjetas += `
+      <div class="card" style="height: 400px; width: 15rem; color: white; background-color: rgba(76, 72, 72, 0.164);">
+        <img src="${evento.image}" class="card-img-top" style="object-fit: cover; height: 190px" alt="Costume Party">
+        <div class="card-body">
+          <h5 class="card-title text-center">${evento.name}</h5>
+          <p class="card-text">${evento.category}</p>
+          <p class="card-text" style="height: 70px">${evento.description}</p>
+          <div class="d-flex justify-content-end align-items-center">
+            <small class="me-auto">Price $${evento.price}</small>
+            <div class="btn-group">
+              <a href="./details.html" type="button" class="btn btn-sm btn-outline-secondary">Details</a>
             </div>
           </div>
-        </div>`
-    });
-    cards.innerHTML = tarjetas
+        </div>
+      </div>`
+  })
+  cards.innerHTML = tarjetas
 }
 
 
