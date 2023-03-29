@@ -65,68 +65,18 @@
   <nav class="p-3">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li class="list-group-item form-check"
-            style="margin: 15px; background-color: black; color: white; border-color: black;">
-            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Category</label>
-          </li>
-          <li class="list-group-item form-check"
-            style="margin: 15px; background-color: black; color: white; border-color: black;">
-            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Category</label>
-          </li>
-          <li class="list-group-item form-check"
-            style="margin: 15px; background-color: black; color: white; border-color: black;">
-            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Category</label>
-          </li>
-          <li class="list-group-item form-check"
-            style="margin: 15px; background-color: black; color: white; border-color: black;">
-            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxStretched">
-            <label class="form-check-label stretched-link" for="fourthCheckboxStretched">Category</label>
-          </li>
-          <li class="list-group-item form-check"
-            style="margin: 15px; background-color: black; color: white; border-color: black;">
-            <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxStretched">
-            <label class="form-check-label stretched-link" for="fifthCheckboxStretched">Category</label>
-          </li>
-        </ul>
+        <div id="checkbox" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"></div>
         <form class="d-flex" role="search">
           <input type="search" style="background-color: rgba(76, 72, 72, 0.164); color: rgb(153, 144, 144);"
             class="form-control form-control" placeholder="Search..." aria-label="Search">
-          <button type="button" class="btn btn-outline-light me-2">Search</button>
         </form>
       </div>
     </div>
   </nav>
   <main class="container">
     <div class="d-flex flex-wrap gap-4 justify-content-center p-4 rounded-4">
-      <div class="card" style="height: 350px; width: 15rem; color: white; background-color: rgba(76, 72, 72, 0.164);">
-        <img src="./images/Museum_Tour.jpg" class="card-img-top" alt="Museum Tour">
-        <div class="card-body">
-          <h5 class="card-title text-center">Museum Tour</h5>
-          <p class="card-text">Texto descriptivo</p>
-          <div class="d-flex justify-content-end align-items-center">
-            <small class="text-muted me-auto">Price 0000</small>
-            <div class="btn-group">
-              <a href="./details.html" type="button" class="btn btn-sm btn-outline-secondary">Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card" style="height: 350px; width: 15rem; color: white; background-color: rgba(76, 72, 72, 0.164);">
-        <img src="./images/Music_Concert.jpg" class="card-img-top" alt="Music Concert">
-        <div class="card-body">
-          <h5 class="card-title text-center">Music Concert</h5>
-          <p class="card-text">Texto descriptivo</p>
-          <div class="d-flex justify-content-end align-items-center">
-            <small class="text-muted me-auto">Price 0000</small>
-            <div class="btn-group">
-              <a href="./details.html" type="button" class="btn btn-sm btn-outline-secondary">Details</a>
-            </div>
-          </div>
-        </div>
+      <div class="d-flex flex-wrap gap-4 justify-content-center p-4 rounded-4">
+        <div class="cards" id="cards"></div>
       </div>
     </div>
   </main>
