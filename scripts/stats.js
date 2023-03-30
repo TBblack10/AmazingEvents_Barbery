@@ -68,7 +68,6 @@ function tabla(results, container) {
 }
 
 
-
 function dataTable(evento) {
     let categories = Array.from(new Set(evento.map(a => a.category)));
     let eventCategories = categories.map(cat => evento.filter(event => event.category == cat))

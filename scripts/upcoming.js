@@ -10,10 +10,10 @@ async function obtenerDatos() {
             crearCheckbox(arrayEvents);
             pintarEventos(arrayEvents);
             superHiperMegaUltraFiltro()
-            
+
             input.addEventListener('input', superHiperMegaUltraFiltro)
             checkbox.addEventListener('change', superHiperMegaUltraFiltro)
-            
+
             function superHiperMegaUltraFiltro() {
                 let primerFiltro = filtrarTexto(arrayEvents, input.value)
                 let segundoFiltro = filtrarCategory(primerFiltro)
@@ -24,6 +24,7 @@ async function obtenerDatos() {
 }
 obtenerDatos()
 
+//Checkbox
 const checkbox = document.getElementById('checkbox')
 
 function crearCheckbox(eventos) {
@@ -33,14 +34,14 @@ function crearCheckbox(eventos) {
     let checkboxes = ''
     eventoChecks.forEach(category => {
         checkboxes += `<div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="${category}" value="${category}">
-      <label class="form-check-label" for="${category}">${category}</label>
-    </div>`
+        <input style="cursor: pointer;" class="check" type="checkbox" id="${category}" value="${category}">
+        <label style="display: inline-block; cursor: pointer;" class="check" for="${category}">${category}</label>
+      </div>`
     })
     checkbox.innerHTML = checkboxes
 }
 
-
+//Cards
 const cards = document.getElementById('cards')
 
 function pintarEventos(eventos) {
@@ -69,7 +70,7 @@ function pintarEventos(eventos) {
     cards.innerHTML = tarjetas
 }
 
-
+//Filtros
 const input = document.querySelector('input')
 
 function filtrarTexto(eventos, texto) {
@@ -77,7 +78,6 @@ function filtrarTexto(eventos, texto) {
         includes(texto.toLowerCase()))
     return arrayFiltrado
 }
-
 
 function filtrarCategory(eventos) {
     let checkboxes = document.querySelectorAll("input[type='checkbox']")

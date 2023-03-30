@@ -8,7 +8,6 @@ async function obtenerDatos() {
       return data
     })
 
-
   superHiperMegaUltraFiltro()
 
   input.addEventListener('input', superHiperMegaUltraFiltro)
@@ -33,8 +32,8 @@ function crearCheckbox(eventos) {
   let checkboxes = ''
   eventoChecks.forEach(category => {
     checkboxes += `<div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="${category}" value="${category}">
-      <label class="form-check-label" for="${category}">${category}</label>
+      <input style="cursor: pointer;" class="check" type="checkbox" id="${category}" value="${category}">
+      <label style="display: inline-block; cursor: pointer;" class="check" for="${category}">${category}</label>
     </div>`
   })
   checkbox.innerHTML = checkboxes
@@ -77,7 +76,6 @@ function filtrarTexto(eventos, texto) {
     includes(texto.toLowerCase()))
   return arrayFiltrado
 }
-
 
 function filtrarCategory(eventos) {
   let checkboxes = document.querySelectorAll("input[type='checkbox']")
