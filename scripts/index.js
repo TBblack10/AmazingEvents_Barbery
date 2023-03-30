@@ -2,13 +2,14 @@ async function obtenerDatos() {
   let data = await fetch('https://mindhub-xj03.onrender.com/api/amazing')
     .then(response => response.json())
     .then(data => {
-      return data;
+
+      crearCheckbox(data.events)
+      pintarEventos(data.events)
+      return data
     })
 
-  superHiperMegaUltraFiltro()
-  crearCheckbox(data.events)
-  pintarEventos(data.events)
 
+  superHiperMegaUltraFiltro()
 
   input.addEventListener('input', superHiperMegaUltraFiltro)
   checkbox.addEventListener('change', superHiperMegaUltraFiltro)
@@ -22,7 +23,7 @@ async function obtenerDatos() {
 
 obtenerDatos()
 
-
+//Checkbox
 const checkbox = document.getElementById('checkbox')
 
 function crearCheckbox(eventos) {
@@ -39,7 +40,7 @@ function crearCheckbox(eventos) {
   checkbox.innerHTML = checkboxes
 }
 
-
+//Cards
 const cards = document.getElementById('cards')
 
 function pintarEventos(eventos) {
@@ -68,7 +69,7 @@ function pintarEventos(eventos) {
   cards.innerHTML = tarjetas
 }
 
-
+//Filtros
 const input = document.querySelector('input')
 
 function filtrarTexto(eventos, texto) {
