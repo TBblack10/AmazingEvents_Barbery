@@ -1,0 +1,79 @@
+
+html, body{
+    width: 100% !important;
+    overflow-x: hidden !important; 
+}
+
+.card {
+    width: 300px;
+    height: 10%;
+}
+
+.logo {
+    height: 70px;
+}
+
+img {
+    height: 180px;
+}
+
+
+h1 {
+    font-size: 3rem !important;
+    font-family: 'Secular One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80px;
+    transition: color 0.7s linear 0.2s;
+}
+
+.carousel{
+    color: rgb(161, 154, 154);
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+
+p{
+    font-size: 14px;
+}
+
+table{
+    background-color: rgba(76, 72, 72, 0.164);
+}
+
+td{
+    color: rgb(233, 233, 233);
+}
+
+.search{
+    position: absolute;
+    right: 50px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2% auto;
+    align-self: center;
+    justify-content: center;
+}
+
+label, small{
+    color: rgb(160, 160, 160);
+}
+
+input:focus{
+    box-shadow: none !important;
+    border-color: rgb(240, 0, 120) !important; 
+}
+
